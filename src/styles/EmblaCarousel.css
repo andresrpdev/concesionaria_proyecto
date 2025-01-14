@@ -1,0 +1,64 @@
+.embla {
+  overflow: hidden;
+  position: relative;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  min-width: 100%;
+  position: relative;
+}
+
+.embla__slide img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  display: block;
+}
+
+.embla__text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  width: 80%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.embla__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.embla__subtitle {
+  font-size: 1.25rem;
+  margin: 10px 0 0;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .embla__slide img {
+    height: 60vh; /* Ajusta la altura para pantallas pequeñas */
+  }
+
+  .embla__text {
+    bottom: 20%; /* Baja el texto un poco más en pantallas pequeñas */
+  }
+
+  .embla__title {
+    font-size: 1.5rem; /* Ajusta el tamaño del título en pantallas pequeñas */
+  }
+
+  .embla__subtitle {
+    font-size: 1rem; /* Ajusta el tamaño del subtítulo en pantallas pequeñas */
+  }
+}
