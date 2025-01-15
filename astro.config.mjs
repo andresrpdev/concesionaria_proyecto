@@ -10,4 +10,5 @@ export default defineConfig({
   vite: {
     assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.webp'],
   },
+  output: "server"
 });

@@ -1,6 +1,11 @@
 ---
 import LayoutCatalogo from '../../layouts/LayoutCatalogo.astro'
+import CatalogoSearch from '../../components/catalogo/CatalogoSearch.jsx'
+
 ---
-<LayoutCatalogo title="Dashboard">
-  <h1>Welcome to the Catalog</h1>
-</LayoutCatalogo>  
+<LayoutCatalogo title="Catálogo">
+  <main class="flex h-full items-start justify-center p-4">
+  
+  <CatalogoSearch/>
+  </main> 
+</LayoutCatalogo>

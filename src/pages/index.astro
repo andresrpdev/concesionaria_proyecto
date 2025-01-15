@@ -1,10 +1,12 @@
 ---
 import LayoutCatalogo from "../layouts/LayoutCatalogo.astro";
 import CarouselPrincipal from "../components/catalogo/CarouselPrincipal.jsx";
+import UltimosIngresos from "../components/catalogo/UltimosIngresos.jsx";
 
 ---
 
 <LayoutCatalogo title   ="Concesionaria FastCars">
     <CarouselPrincipal client:load/>
     <h2 class="text-center text-2xl my-4">Ultimos Ingresos </h2>
+    <UltimosIngresos client:load/>
 </LayoutCatalogo>

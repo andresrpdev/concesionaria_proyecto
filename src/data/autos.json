@@ -1,0 +1,604 @@
+{
+    "autos": [
+        {
+            "id": 1,
+            "marca": "Audi",
+            "modelo": "RSQ8",
+            "año": 2023,
+            "motor": "4.0L V8",
+            "carroceria": "SUV",
+            "imagen": "https://www.abt-sportsline.com/fileadmin/_processed_/0/1/csm_RSQ8_S.E._Fahraufnahme_fe6a09b35c.jpg",
+            "precio": "114,000 USD"
+        },
+        {
+            "id": 2,
+            "marca": "BMW",
+            "modelo": "M3",
+            "año": 2022,
+            "motor": "3.0L I6",
+            "carroceria": "Sedán",
+            "imagen": "https://images.holley.com/2022_bmw_m3-06.jpg",
+            "precio": "72,000 USD"
+        },
+        {
+            "id": 3,
+            "marca": "Ford",
+            "modelo": "F150",
+            "año": 2021,
+            "motor": "5.0L V8",
+            "carroceria": "Camioneta",
+            "imagen": "https://cdn.motor1.com/images/mgl/WpjRL/s3/2021-ford-f-150.jpg",
+            "precio": "43,000 USD"
+        },
+        {
+            "id": 4,
+            "marca": "Toyota",
+            "modelo": "Camry",
+            "año": 2020,
+            "motor": "2.5L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2020-toyta-camry-mmp-1-1566921359.jpg",
+            "precio": "25,000 USD"
+        },
+        {
+            "id": 5,
+            "marca": "Honda",
+            "modelo": "Civic",
+            "año": 2019,
+            "motor": "2.0L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://thumb.spokesman.com/GuEQ_G5yIL1-7fyMozwrQ0nUzr8=/1200x800/smart/media.spokesman.com/photos/2019/09/04/civic_ext_2.jpg",
+            "precio": "22,000 USD"
+        },
+        {
+            "id": 6,
+            "marca": "Mercedes-Benz",
+            "modelo": "E-Class",
+            "año": 2023,
+            "motor": "3.0L V6",
+            "carroceria": "Sedán",
+            "imagen": "https://www.topgear.com/sites/default/files/2023/04/23c0021_002.jpg",
+            "precio": "75,000 USD"
+        },
+        {
+            "id": 7,
+            "marca": "Chevrolet",
+            "modelo": "Malibu",
+            "año": 2021,
+            "motor": "1.5L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2021-chevrolet-malibu-mmp-1-1598373352.jpg",
+            "precio": "29,000 USD"
+        },
+        {
+            "id": 8,
+            "marca": "Subaru",
+            "modelo": "Outback",
+            "año": 2022,
+            "motor": "2.5L H4",
+            "carroceria": "SUV",
+            "imagen": "https://images.carexpert.com.au/resize/3000/-/app/uploads/2022/04/2022-Subaru-Outback-AWD-Touring_220114_Subaru-Outback-Premium_Still-65.jpg",
+            "precio": "35,000 USD"
+        },
+        {
+            "id": 9,
+            "marca": "Nissan",
+            "modelo": "Altima",
+            "año": 2020,
+            "motor": "2.0L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2019-nissan-altima-102-1538074559.jpg",
+            "precio": "26,000 USD"
+        },
+        {
+            "id": 10,
+            "marca": "Mazda",
+            "modelo": "CX-5",
+            "año": 2021,
+            "motor": "2.5L I4",
+            "carroceria": "SUV",
+            "imagen": "https://www.motortrend.com/uploads/sites/5/2021/01/2021-Mazda-CX-5-Signature-AWD-Turbo-9.jpg?w=768&width=768&q=75&format=webp",
+            "precio": "32,000 USD"
+        },
+        {
+            "id": 11,
+            "marca": "Hyundai",
+            "modelo": "Elantra",
+            "año": 2022,
+            "motor": "2.0L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://www.elnuevoherald.com/noticias/finanzas/6wctjk/picture268780322/alternates/FREE_1140/2022_hyundai_elantra_sedan_n_fq_oem_3_815x543",
+            "precio": "23,000 USD"
+        },
+        {
+            "id": 12,
+            "marca": "Volkswagen",
+            "modelo": "Passat",
+            "año": 2020,
+            "motor": "2.0L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://www.freep.com/gcdn/presto/2020/06/09/PDTF/c604b4b1-b292-445c-a1ab-ebf8d9e602b8-IMG_1825.JPG",
+            "precio": "28,000 USD"
+        },
+        {
+            "id": 13,
+            "marca": "Kia",
+            "modelo": "Sorento",
+            "año": 2023,
+            "motor": "2.5L I4",
+            "carroceria": "SUV",
+            "imagen": "https://www.motortrend.com/uploads/2022/10/2023-Kia-Sorento-PHEV-exterior-01.jpg",
+            "precio": "33,000 USD"
+        },
+        {
+            "id": 14,
+            "marca": "Jaguar",
+            "modelo": "XE",
+            "año": 2022,
+            "motor": "2.0L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://media.drive.com.au/obj/tx_q:50,rs:auto:1920:1080:1/driveau/upload/cms/uploads/urzcv5godz9izbe1pwts",
+            "precio": "55,000 USD"
+        },
+        {
+            "id": 15,
+            "marca": "Porsche",
+            "modelo": "911",
+            "año": 2021,
+            "motor": "3.0L I6",
+            "carroceria": "Coupé",
+            "imagen": "https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2021/03/porsche-911-2021-virtudes-defectos-2268325.jpg?tf=3840x",
+            "precio": "120,000 USD"
+        },
+        {
+            "id": 16,
+            "marca": "Land Rover",
+            "modelo": "Discovery",
+            "año": 2020,
+            "motor": "3.0L V6",
+            "carroceria": "SUV",
+            "imagen": "https://i.gaw.to/content/photos/37/88/378886_Land_Rover_Discovery_Sport.jpg",
+            "precio": "65,000 USD"
+        },
+        {
+            "id": 17,
+            "marca": "Lexus",
+            "modelo": "RX",
+            "año": 2023,
+            "motor": "3.5L V6",
+            "carroceria": "SUV",
+            "imagen": "https://www.freep.com/gcdn/presto/2022/09/07/PDTF/a17dde1d-2c6d-4eaf-b38e-20307b56f7f2-IMG_2691.JPEG",
+            "precio": "48,000 USD"
+        },
+        {
+            "id": 18,
+            "marca": "Buick",
+            "modelo": "Enclave",
+            "año": 2021,
+            "motor": "3.6L V6",
+            "carroceria": "SUV",
+            "imagen": "https://media.ed.edmunds-media.com/buick/enclave/2021/oem/2021_buick_enclave_4dr-suv_avenir_fq_oem_1_1600.jpg",
+            "precio": "42,000 USD"
+        },
+        {
+            "id": 19,
+            "marca": "Chrysler",
+            "modelo": "300",
+            "año": 2022,
+            "motor": "3.6L V6",
+            "carroceria": "Sedán",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2022-chrysler-300-mmp-1-1633361770.jpg",
+            "precio": "35,000 USD"
+        },
+        {
+            "id": 20,
+            "marca": "Cadillac",
+            "modelo": "XT5",
+            "año": 2020,
+            "motor": "3.6L V6",
+            "carroceria": "SUV",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/cadillac-xt5-2020-1600-05-1564305684.jpg",
+            "precio": "50,000 USD"
+        },
+        {
+            "id": 21,
+            "marca": "Acura",
+            "modelo": "MDX",
+            "año": 2023,
+            "motor": "3.5L V6",
+            "carroceria": "SUV",
+            "imagen": "https://www.motortrend.com/uploads/2021/11/2022-Acura-MDX-SH-AWD-16.jpg",
+            "precio": "53,000 USD"
+        },
+        {
+            "id": 22,
+            "marca": "Alfa Romeo",
+            "modelo": "Giulia",
+            "año": 2021,
+            "motor": "2.0L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/c51905b0000b639a185eeb080dd879bf007f5604/photos/KYlxeMvA-WXW8DrFVZL-(edit).jpg?t=168932082086",
+            "precio": "43,000 USD"
+        },
+        {
+            "id": 23,
+            "marca": "Mitsubishi",
+            "modelo": "Outlander",
+            "año": 2022,
+            "motor": "2.5L I4",
+            "carroceria": "SUV",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2022-outlander-launch-hero-image-source-1-1613556399.jpg ",
+            "precio": "30,000 USD"
+        },
+        {
+            "id": 24,
+            "marca": "Infiniti",
+            "modelo": "QX60",
+            "año": 2020,
+            "motor": "3.5L V6",
+            "carroceria": "SUV",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2020-infiniti-qx60-mmp-1-1574103215.jpg",
+            "precio": "49,000 USD"
+        },
+        {
+            "id": 25,
+            "marca": "Genesis",
+            "modelo": "G80",
+            "año": 2023,
+            "motor": "3.5L V6",
+            "carroceria": "Sedán",
+            "imagen": "https://www.motortrend.com/uploads/2022/08/2023-Genesis-G80-AWD-3.5T-Sport-51.jpeg",
+            "precio": "60,000 USD"
+        },
+        {
+            "id": 26,
+            "marca": "Toyota",
+            "modelo": "Corolla",
+            "año": 2021,
+            "motor": "2.0L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://st1.uvnimg.com/dd/55/c58159e24c3fadb5c0d7988bc3b2/2021-toyota-corolla-apex-014.jpg",
+            "precio": "24,000 USD"
+        },
+        {
+            "id": 27,
+            "marca": "Honda",
+            "modelo": "Accord",
+            "año": 2022,
+            "motor": "1.5L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://blog.way.com/wp-content/uploads/2023/11/Honda-Accord-2020.webp",
+            "precio": "27,000 USD"
+        },
+        {
+            "id": 28,
+            "marca": "Hyundai",
+            "modelo": "Santa Fe",
+            "año": 2020,
+            "motor": "2.5L I4",
+            "carroceria": "SUV",
+            "imagen": "https://images1.autocasion.com/actualidad/wp-content/uploads/2020/06/Nuevo-Hyundai-Santa-Fe-2020-8.jpg",
+            "precio": "31,000 USD"
+        },
+        {
+            "id": 29,
+            "marca": "Mazda",
+            "modelo": "Mazda3",
+            "año": 2021,
+            "motor": "2.5L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://cdn.motor1.com/images/mgl/kN9Ex/s1/2021-mazda3-update-in-japan.jpg",
+            "precio": "28,000 USD"
+        },
+        {
+            "id": 30,
+            "marca": "Peugeot",
+            "modelo": "3008",
+            "año": 2022,
+            "motor": "1.6L I4",
+            "carroceria": "SUV",
+            "imagen": "https://resizer.glanacion.com/resizer/v2/este-peugeot-3008-hybrid4-conserva-las-mismas-HJO44IU4NNEFZJIHSKBZDKPJ6U.jpg?auth=eb6502bdb3ef4b3ed4a1c4088f493988d679df5cbb213b947493d527a9060af1&width=880&height=586&quality=70&smart=true",
+            "precio": "32,000 USD"
+        },
+        {
+            "id": 31,
+            "marca": "Renault",
+            "modelo": "Koleos",
+            "año": 2021,
+            "motor": "2.5L I4",
+            "carroceria": "SUV",
+            "imagen": "https://carnovo.com/wp-content/uploads/2021/01/renault-koleos-2021-zaga.jpg",
+            "precio": "33,000 USD"
+        },
+        {
+            "id": 32,
+            "marca": "Fiat",
+            "modelo": "500X",
+            "año": 2022,
+            "motor": "1.3L I4",
+            "carroceria": "SUV",
+            "imagen": "https://cdn.motor1.com/images/mgl/GLXJV/s1/4x3/critica-fiat-500x-cross.webp",
+            "precio": "27,000 USD"
+        },
+        {
+            "id": 33,
+            "marca": "Jeep",
+            "modelo": "Grand Cherokee",
+            "año": 2023,
+            "motor": "3.6L V6",
+            "carroceria": "SUV",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2023-jeep-grand-cherokee-summit-4x4-101-1667328305.jpeg?crop=0.617xw:0.520xh;0.353xw,0.451xh&resize=1200:*",
+            "precio": "60,000 USD"
+        },
+        {
+            "id": 34,
+            "marca": "Volvo",
+            "modelo": "XC60",
+            "año": 2022,
+            "motor": "2.0L I4",
+            "carroceria": "SUV",
+            "imagen": "https://acroadtrip.blob.core.windows.net/catalogo-imagenes/xl/RT_V_755b9d72daa044f2b7cd07818b1cb3d7.jpg",
+            "precio": "52,000 USD"
+        },
+        {
+            "id": 35,
+            "marca": "Tesla",
+            "modelo": "Model Y",
+            "año": 2023,
+            "motor": "Dual Motor",
+            "carroceria": "SUV",
+            "imagen": "https://www.motortrend.com/uploads/2023/08/017-2023-Tesla-Model-Y-Long-Range-front-three-quarters-in-motion.jpg",
+            "precio": "58,000 USD"
+        },
+        {
+            "id": 36,
+            "marca": "Audi",
+            "modelo": "A4",
+            "año": 2021,
+            "motor": "2.0L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://www.motortrend.com/uploads/sites/10/2020/12/2021-audi-a4-premium-sedan-angular-front.png",
+            "precio": "42,000 USD"
+        },
+        {
+            "id": 37,
+            "marca": "BMW",
+            "modelo": "X5",
+            "año": 2023,
+            "motor": "3.0L I6",
+            "carroceria": "SUV",
+            "imagen": "https://cdn.motor1.com/images/mgl/eo6418/s1/2023-bmw-x5.jpg",
+            "precio": "77,000 USD"
+        },
+        {
+            "id": 38,
+            "marca": "Ford",
+            "modelo": "Mustang",
+            "año": 2022,
+            "motor": "5.0L V8",
+            "carroceria": "Coupé",
+            "imagen": "https://www.mckieford.com/static/dealer-14789/SEO/Comparison_Pages/2023_vs_2022/Mustang/2022-Ford-Mustang-1.PNG",
+            "precio": "43,000 USD"
+        },
+        {
+            "id": 39,
+            "marca": "Chevrolet",
+            "modelo": "Traverse",
+            "año": 2021,
+            "motor": "3.6L V6",
+            "carroceria": "SUV",
+            "imagen": "https://www.elcarrocolombiano.com/wp-content/uploads/2020/03/20200313-CHEVROLET-TRAVERSE-2021-01.jpg",
+            "precio": "42,000 USD"
+        },
+        {
+            "id": 40,
+            "marca": "Honda",
+            "modelo": "Pilot",
+            "año": 2023,
+            "motor": "3.5L V6",
+            "carroceria": "SUV",
+            "imagen": "https://img.asmedia.epimg.net/resizer/v2/NIWOZ2T475DOJPPXPBG3J77N7M.jpg?auth=09b5f0360b2aba0925b5c96a3fdb0289b739f6d105f030dfff89c9d3e7551d2f&width=1472&height=1104&smart=true",
+            "precio": "36,000 USD"
+        },
+        {
+            "id": 41,
+            "marca": "Mazda",
+            "modelo": "MX-5 Miata",
+            "año": 2022,
+            "motor": "2.0L I4",
+            "carroceria": "Coupé",
+            "imagen": "https://cdn.jdpower.com/JDP_2022%20Mazda%20MX-5%20Miata%20RF%20Club%20BBS%20Soul%20Red%20Front%20Quarter%20View.jpg",
+            "precio": "34,000 USD"
+        },
+        {
+            "id": 42,
+            "marca": "Hyundai",
+            "modelo": "Kona",
+            "año": 2023,
+            "motor": "2.0L I4",
+            "carroceria": "SUV",
+            "imagen": "https://phantom-marca.unidadeditorial.es/bc4165d1d2dd573c3b40b9857ba70346/resize/828/f/jpg/assets/multimedia/imagenes/2023/07/16/16894928144739.jpg",
+            "precio": "29,000 USD"
+        },
+        {
+            "id": 43,
+            "marca": "Nissan",
+            "modelo": "Rogue",
+            "año": 2021,
+            "motor": "2.5L I4",
+            "carroceria": "SUV",
+            "imagen": "https://media.ed.edmunds-media.com/nissan/rogue/2021/oem/2021_nissan_rogue_4dr-suv_platinum_fq_oem_1_1600.jpg",
+            "precio": "33,000 USD"
+        },
+        {
+            "id": 44,
+            "marca": "Subaru",
+            "modelo": "Forester",
+            "año": 2020,
+            "motor": "2.5L H4",
+            "carroceria": "SUV",
+            "imagen": "https://media.ed.edmunds-media.com/subaru/forester/2019/oem/2019_subaru_forester_4dr-suv_limited_fq_oem_1_1600.jpg",
+            "precio": "31,000 USD"
+        },
+        {
+            "id": 45,
+            "marca": "Toyota",
+            "modelo": "Highlander",
+            "año": 2022,
+            "motor": "3.5L V6",
+            "carroceria": "SUV",
+            "imagen": "https://i.blogs.es/9a20f6/3-4_frente/1366_2000.jpeg",
+            "precio": "39,000 USD"
+        },
+        {
+            "id": 46,
+            "marca": "Volkswagen",
+            "modelo": "Atlas",
+            "año": 2023,
+            "motor": "3.6L V6",
+            "carroceria": "SUV",
+            "imagen": "https://cdn.motor1.com/images/mgl/7ZPR1o/s1/4x3/2024-volkswagen-atlas.webp",
+            "precio": "45,000 USD"
+        },
+        {
+            "id": 47,
+            "marca": "Cadillac",
+            "modelo": "Escalade",
+            "año": 2021,
+            "motor": "6.2L V8",
+            "carroceria": "SUV",
+            "imagen": "https://cdn.jdpower.com/JDPA_2021%20Cadillac%20Premium%20Luxury%20Shadow%20Metallic%20Front%20View.jpg",
+            "precio": "88,000 USD"
+        },
+        {
+            "id": 48,
+            "marca": "Jeep",
+            "modelo": "Wrangler",
+            "año": 2022,
+            "motor": "3.6L V6",
+            "carroceria": "SUV",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/jeep-wrangler-4xe-2022-1638881858.jpg",
+            "precio": "42,000 USD"
+        },
+        {
+            "id": 49,
+            "marca": "Land Rover",
+            "modelo": "Range Rover",
+            "año": 2023,
+            "motor": "5.0L V8",
+            "carroceria": "SUV",
+            "imagen": "https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2022/10/range-rover-2023-2843469.jpg?tf=3840x",
+            "precio": "90,000 USD"
+        },
+        {
+            "id": 50,
+            "marca": "Porsche",
+            "modelo": "Cayenne",
+            "año": 2022,
+            "motor": "3.0L V6",
+            "carroceria": "SUV",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/s21-3202-fine-1627335182.jpg",
+            "precio": "85,000 USD"
+        },
+        {
+            "id": 51,
+            "marca": "Tesla",
+            "modelo": "Model S",
+            "año": 2023,
+            "motor": "Dual Motor",
+            "carroceria": "Sedán",
+            "imagen": "https://www.motortrend.com/uploads/2022/11/2023-Tesla-Model-S-Plaid-Offsite-38.jpg",
+            "precio": "95,000 USD"
+        },
+        {
+            "id": 52,
+            "marca": "Genesis",
+            "modelo": "GV80",
+            "año": 2022,
+            "motor": "3.5L V6",
+            "carroceria": "SUV",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2105-2021genesisgv80inhudsonvalleynewyork-copy-1641919077.jpg",
+            "precio": "68,000 USD"
+        },
+        {
+            "id": 53,
+            "marca": "Infiniti",
+            "modelo": "QX50",
+            "año": 2021,
+            "motor": "2.0L I4",
+            "carroceria": "SUV",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2021-infiniti-qx50-mmp-2-1603141536.jpg",
+            "precio": "43,000 USD"
+        },
+        {
+            "id": 54,
+            "marca": "Acura",
+            "modelo": "RDX",
+            "año": 2022,
+            "motor": "2.0L I4",
+            "carroceria": "SUV",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/2022-acura-rdx-pmc-edition-110-1632168502.jpg",
+            "precio": "41,000 USD"
+        },
+        {
+            "id": 55,
+            "marca": "Alfa Romeo",
+            "modelo": "Stelvio",
+            "año": 2023,
+            "motor": "2.0L I4",
+            "carroceria": "SUV",
+            "imagen": "https://cdn.motor1.com/images/mgl/0eJgx2/s1/alfa-romeo-stelvio-2023.jpg",
+            "precio": "52,000 USD"
+        },
+        {
+            "id": 56,
+            "marca": "Mitsubishi",
+            "modelo": "Eclipse Cross",
+            "año": 2022,
+            "motor": "1.5L I4",
+            "carroceria": "SUV",
+            "imagen": "https://images.hgmsites.net/lrg/2022-mitsubishi-eclipse-cross-se-s-awc-angular-front-exterior-view_100852831_l.jpg",
+            "precio": "28,000 USD"
+        },
+        {
+            "id": 57,
+            "marca": "Fiat",
+            "modelo": "Panda",
+            "año": 2021,
+            "motor": "1.2L I4",
+            "carroceria": "Hatchback",
+            "imagen": "https://hips.hearstapps.com/hmg-prod/images/01-nuevopandasport-1603280116.jpg",
+            "precio": "17,000 USD"
+        },
+        {
+            "id": 58,
+            "marca": "Peugeot",
+            "modelo": "508",
+            "año": 2020,
+            "motor": "1.6L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://cdn.topgear.es/sites/navi.axelspringer.es/public/media/image/2019/02/Peugeot%20508%20Sport%20Engineered%20Concept%204.jpg?tf=3840x",
+            "precio": "37,000 USD"
+        },
+        {
+            "id": 59,
+            "marca": "Renault",
+            "modelo": "Captur",
+            "año": 2022,
+            "motor": "1.3L I4",
+            "carroceria": "SUV",
+            "imagen": "https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2022/07/precio-renault-captur-2757663.jpg?tf=3840x",
+            "precio": "29,000 USD"
+        },
+        {
+            "id": 60,
+            "marca": "Volvo",
+            "modelo": "S60",
+            "año": 2021,
+            "motor": "2.0L I4",
+            "carroceria": "Sedán",
+            "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Volvo_S60_%283rd_generation%29_IMG_8468.jpg/1200px-Volvo_S60_%283rd_generation%29_IMG_8468.jpg",
+            "precio": "39,000 USD"
+        }
+    ]
+}
