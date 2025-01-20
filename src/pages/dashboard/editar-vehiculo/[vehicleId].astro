@@ -1,0 +1,15 @@
+---
+import { getVehicleById } from "../../../utils/vehicleUtils"; // O la ruta correcta donde esté la función
+import LayoutDashboard from "../../../layouts/LayoutDashboard.astro";
+import FormEditVehiculos from "../../../components/dashboard/FormEditVehiculos";
+
+const { vehicleId } = Astro.params;
+
+// Obtenemos el vehículo usando el ID
+
+const vehicle = await getVehicleById(vehicleId);
+---
+
+<LayoutDashboard title="Editar vehiculo">
+  <FormEditVehiculos vehicle={vehicle} client:load/>
+</LayoutDashboard>

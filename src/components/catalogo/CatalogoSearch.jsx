@@ -9,7 +9,7 @@ export default function Search() {
     const [selectedYear, setSelectedYear] = useState("");
 
     // Obtener años únicos
-    const uniqueYears = [...new Set(autos.map((auto) => auto.año))].sort((a, b) => b - a);
+     const uniqueYears = [...new Set(autos.map((auto) => auto.año))].sort((a, b) => b - a);
 
     // Obtener marcas únicas
     const uniqueBrands = [...new Set(autos.map((auto) => auto.marca))].sort();
