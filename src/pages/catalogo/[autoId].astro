@@ -1,63 +1,84 @@
 ---
-import autosData from '../../data/autos.json';
 import LayoutCatalogo from '../../layouts/LayoutCatalogo.astro';
 const { autoId } = Astro.params;
+import { getVehicleById } from '../../utils/vehicleUtils'; // Asumimos que esta función es una llamada asincrónica
 
+let vehicle = null; // Inicializamos como null
+let loading = true; // Indicador de carga
+
+// Verificamos que el autoId sea válido
 if (!autoId) {
-    throw new Error('autoId no está definido. Verifica la ruta o las params.');
+  throw new Error('autoId no está definido. Verifica la ruta o las params.');
 }
 
-const autos = autosData.autos;
-const vehicle = autos.find(vehicle => vehicle.id === Number(autoId));
+try {
+  vehicle = await getVehicleById(autoId); // Llamada a la función para obtener el vehículo por ID
+  loading = false; // Cambiamos el estado de carga una vez que tenemos los datos
+} catch (error) {
+  console.error('Error al cargar los datos del vehículo:', error);
+  throw new Error(`Error al obtener los datos del vehículo con ID ${autoId}`);
+}
+
+// Validamos si el vehículo existe después de la solicitud
 if (!vehicle) {
-    throw new Error(`Auto with id ${autoId} not found`);
+  throw new Error(`Auto con ID ${autoId} no encontrado.`);
 }
 ---
-<LayoutCatalogo title={`${vehicle.marca} ${vehicle.modelo} ${vehicle.año}`}>
-    <main>
-      <nav class="breadcrumb">
-        <a href="/">Home</a> / <a href="/catalogo">Catálogo</a> / <span>{vehicle.marca} {vehicle.modelo}</span>
-      </nav>
-  
-      <div class="vehicle-container">
-        <div class="image-section">
-          <img  transition:name={`${vehicle.id} image box`} src={vehicle.imagen} alt={`${vehicle.marca} ${vehicle.modelo}`} />
-          <div class="description my-2 rounded-lg p-2">
-            <h2 class="italic font-bold">Descripción personal del vehiculo</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia beatae aliquid nulla nisi quis mollitia, non cupiditate atque ducimus saepe ex placeat tenetur laborum iusto quam commodi alias sapiente molestiae.</p>
+<LayoutCatalogo title={`${vehicle.brand} ${vehicle.model} ${vehicle.year}`}>
+  <main>
+    {loading ? (
+      <div class="loader">Cargando...</div>
+    ) : (
+      <>
+        <nav class="breadcrumb">
+          <a href="/">Home</a> / <a href="/catalogo">Catálogo</a> / <span>{vehicle.brand} {vehicle.model}</span>
+        </nav>
+
+        <div class="vehicle-container">
+          <!-- Sección de imagen -->
+          <div class="image-section">
+            <img 
+              src={vehicle.image} 
+              alt={`${vehicle.brand} ${vehicle.model}`} 
+            />
+            <div class="description my-2 rounded-lg p-2">
+              <h2 class="italic font-bold">Descripción del vehículo</h2>
+             {vehicle.description ? vehicle.description : <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia beatae aliquid nulla nisi quis mollitia, non cupiditate atque ducimus saepe ex placeat tenetur laborum iusto quam commodi alias sapiente molestiae.</p>} 
+            </div>
           </div>
-        </div>
-  
-        <div class="info-section">
-          <h1>{vehicle.marca} {vehicle.modelo}</h1>
-          <div class="price">{vehicle.precio}</div>
-          
-          <div class="specs">
-            <span class="text-xl font-medium">Ficha técnica</span>
-            <div class="spec-item">
-              <span class="label">Año</span>
-              <span class="value">{vehicle.año}</span>
-            </div>
-            <div class="spec-item">
-              <span class="label">Motor</span>
-              <span class="value">{vehicle.motor}</span>
-            </div>
-            <div class="spec-item">
-              <span class="label">Carrocería</span>
-              <span class="value">{vehicle.carroceria}</span>
+
+          <!-- Sección de información -->
+          <div class="info-section">
+            <h1>{vehicle.brand} {vehicle.model}</h1>
+            <div class="price">{vehicle.price} USD</div>
+
+            <div class="specs">
+              <span class="text-xl font-medium">Ficha técnica</span>
+              <div class="spec-item">
+                <span class="label">Año:</span>
+                <span class="value">{vehicle.year}</span>
+              </div>
+              <div class="spec-item">
+                <span class="label">Tipo de carrocería:</span>
+                <span class="value">{vehicle.body_type}</span>
+              </div>
+              <div class="spec-item">
+                <span class="label">Motor:</span>
+                <span class="value">{vehicle.engine}</span>
+              </div>
             </div>
 
-          </div>
-  
-          <div class="actions">
-            <button class="contact-btn">Contactar vendedor</button>
-            <button class="schedule-btn">Agendar prueba de manejo</button>
+            <div class="actions">
+              <a href={`/contacto?id=${vehicle.id}`} class="contact-btn text-center">Contactar vendedor</a>
+              <a href={`/contacto?id=${vehicle.id}&drive=true`} class="schedule-btn text-center">Agendar prueba de manejo</a>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-  </LayoutCatalogo>
-  
+      </>
+    )}
+  </main>
+</LayoutCatalogo>
+
   <style>
     main {
       margin: auto;
@@ -138,7 +159,7 @@ if (!vehicle) {
       gap: 1rem;
     }
   
-    button {
+    .actions a {
       padding: 1rem;
       border: none;
       border-radius: 8px;
@@ -147,7 +168,7 @@ if (!vehicle) {
       transition: transform 0.2s, background-color 0.3s;
     }
   
-    button:hover {
+    .actions a:hover {
       transform: translateY(-2px);
     }
   

@@ -1,5 +1,17 @@
 import { supabase } from "../lib/supabase" // Asegúrate de que la ruta sea correcta
 import {autos} from "../data/autos.json";
+
+export async function getAllVehicles(){
+  const {data,error} = await supabase
+    .from('vehicles')
+    .select('*');
+  if(error){
+    console.error("Error al obtener los vehículos:", error.message);
+    return null;
+  }
+  return data;
+}
+
 export async function getVehicleById(id) {
   const { data, error } = await supabase
     .from('vehicles') // La tabla de vehículos

@@ -1,0 +1,12 @@
+---
+import LayoutCatalogo from '../../layouts/LayoutCatalogo.astro'
+import {ContactForm} from "../../components/catalogo/ContactForm"
+
+---
+
+<LayoutCatalogo title="Contacto" >
+    
+    <div class="z-10 flex justify-center items-center h-[90vh] w-screen bg-gray-300">
+        <ContactForm client:idle/>
+    </div>
+</LayoutCatalogo>
