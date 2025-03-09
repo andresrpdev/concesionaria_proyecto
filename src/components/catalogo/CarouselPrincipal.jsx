@@ -3,13 +3,19 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import "../../styles/EmblaCarousel.css";
 
-const vehicles = [
-    { img: "/carusel/bmw.jpg", title: "BMW Serie 2", subtitle: "Confort y rendimiento en su máxima expresión" },
-    { img: "/carusel/f150r.jpg", title: "Ford F150", subtitle: "La camioneta robusta para cualquier desafío" },
-    { img: "/carusel/mercedes.jpg", title: "Mercedes-Benz Clase E", subtitle: "Elegancia y potencia combinadas" },
-    { img: "/carusel/jeep.jpg", title: "Jeep Wrangler", subtitle: "El rey del todoterreno" },
-    { img: "/carusel/tesla.jpg", title: "Tesla Model S", subtitle: "El futuro eléctrico del rendimiento" },
+// Importar las imágenes
+import bmwImg from '../../assets/carusel/bmw.jpg';
+import f150Img from '../../assets/carusel/f150r.jpg';
+import mercedesImg from '../../assets/carusel/mercedes.jpg';
+import jeepImg from '../../assets/carusel/jeep.jpg';
+import teslaImg from '../../assets/carusel/tesla.jpg';
 
+const vehicles = [
+    { img: bmwImg, title: "BMW Serie 2", subtitle: "Confort y rendimiento en su máxima expresión" },
+    { img: f150Img, title: "Ford F150", subtitle: "La camioneta robusta para cualquier desafío" },
+    { img: mercedesImg, title: "Mercedes-Benz Clase E", subtitle: "Elegancia y potencia combinadas" },
+    { img: jeepImg, title: "Jeep Wrangler", subtitle: "El rey del todoterreno" },
+    { img: teslaImg, title: "Tesla Model S", subtitle: "El futuro eléctrico del rendimiento" },
 ];
 export default function EmblaCarousel() {
     const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3500 })]);
