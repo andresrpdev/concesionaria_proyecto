@@ -4,11 +4,11 @@ import Autoplay from 'embla-carousel-autoplay';
 import "../../styles/EmblaCarousel.css";
 
 const vehicles = [
-    { img: "/src/assets/carusel/bmw.jpg", title: "BMW Serie 2", subtitle: "Confort y rendimiento en su máxima expresión" },
-    { img: "/src/assets/carusel/f150r.jpg", title: "Ford F150", subtitle: "La camioneta robusta para cualquier desafío" },
-    { img: "/src/assets/carusel/mercedes.jpg", title: "Mercedes-Benz Clase E", subtitle: "Elegancia y potencia combinadas" },
-    { img: "/src/assets/carusel/jeep.jpg", title: "Jeep Wrangler", subtitle: "El rey del todoterreno" },
-    { img: "/src/assets/carusel/tesla.jpg", title: "Tesla Model S", subtitle: "El futuro eléctrico del rendimiento" },
+    { img: "/carusel/bmw.jpg", title: "BMW Serie 2", subtitle: "Confort y rendimiento en su máxima expresión" },
+    { img: "/carusel/f150r.jpg", title: "Ford F150", subtitle: "La camioneta robusta para cualquier desafío" },
+    { img: "/carusel/mercedes.jpg", title: "Mercedes-Benz Clase E", subtitle: "Elegancia y potencia combinadas" },
+    { img: "/carusel/jeep.jpg", title: "Jeep Wrangler", subtitle: "El rey del todoterreno" },
+    { img: "/carusel/tesla.jpg", title: "Tesla Model S", subtitle: "El futuro eléctrico del rendimiento" },
 
 ];
 export default function EmblaCarousel() {
